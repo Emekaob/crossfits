@@ -1,0 +1,1 @@
+alert("Hello! This is a sample alert message.");

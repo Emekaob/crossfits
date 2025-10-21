@@ -539,6 +539,12 @@ footer a:hover {
     padding-bottom: 1rem;
   }
 }
+
+/* @media screen and (min-width: 781px) and (max-width: 999px) {
+  .welcome-card h1 {
+    font-size: 22px;
+  }
+} */
 /* @media screen and (min-width: 480px) and (max-width: 780px) {
   .welcome-card h1 {
     font-size: 16px;
