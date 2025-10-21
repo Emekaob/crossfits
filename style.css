@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("img/bg_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 2.5rem 3rem;
+  margin-top: -2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+  overflow: hidden;
+}
+img {
+  transition: 0.5s;
+}
+img:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+.cross {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 100;
+}
+
+.fits {
+  font-weight: bold;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-inline: 1rem;
+}
+
+.nav-bar a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.welcome-card {
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/img_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.welcome-card-two {
+  background-image: url("img/img_6.webp");
+  background-position: center center;
+}
+
+.welcome-card h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+
+.welcome-card h5 {
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  font-size: x-small;
+}
+
+.popular-program-container {
+  background-color: white;
+  padding: 8rem 2.8rem;
+}
+
+.popular-program-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px, repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.popular-program-container h2 {
+  padding-bottom: 1rem;
+  font-weight: 100;
+  font-size: 1.8rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+}
+
+.mini-card {
+  /* width: 350px; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mini-card img {
+  max-width: 100%;
+}
+
+.mini-card-text {
+  margin-top: -0.3rem;
+  padding: 1.5rem 0rem 3rem 1.5rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.mini-card-text h3 {
+  color: black;
+  font-weight: 500;
+}
+
+.mini-card-text a {
+  background-color: #fd7e14;
+  color: white;
+  border: 1px solid #fd7e14;
+  border-radius: 0.3rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: -2rem;
+}
+
+.mini-card-text a:hover {
+  background-color: #cf640d;
+}
+
+.the-club-card {
+  background-color: white;
+  padding: 8rem 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5rem;
+}
+
+.the-club-card-img {
+  grid-column: 1/4;
+}
+
+.the-club-card img {
+  width: 100%;
+}
+
+.the-club-card-text {
+  grid-column: 4/7;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.the-club-card-text h2 {
+  color: black;
+  font-weight: 500;
+  margin: 0px 0px 16px;
+  padding: 20px 0px 0px;
+}
+
+.the {
+  border-top: 2px solid #fd7e14;
+  padding-top: 20px;
+}
+
+.the-club-card-text a {
+  color: #fd7e14;
+  border: 1px solid #fd7e14;
+  border-radius: 0.3rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.the-club-card-text a:hover {
+  background-color: #fd7e14;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.featured-trainer-container {
+  padding: 10rem 10rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: white;
+  background-image: url(img/bg_2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.featured-trainer-container-two {
+  padding: 10rem 2.8rem;
+}
+
+.featured-trainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.featured-trainer-container h2 {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.featured-trainer-container h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.featured-trainer-container p {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.featured-trainer-container img {
+  border-radius: 50%;
+  max-width: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.featured-trainer-container a {
+  color: white;
+  background-color: #fd7e14;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.featured-trainer-container a:hover {
+  background-color: #cf640d;
+}
+
+.crossfit-container {
+  background-color: white;
+  padding: 8rem 2.8rem;
+}
+
+.crossfit-container h2 {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.08rem;
+}
+
+.crossfit-exercise {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px, repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.crossfit-exercise-card {
+  border: 1px solid rgb(228, 228, 228);
+  /* width: 350px; */
+  padding: 2rem 1.7rem;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.crossfit-exercise-card:hover {
+  box-shadow: 16px 16px 16px #f6f6f6;
+  margin-top: -10px;
+}
+
+.crossfit-exercise-card img {
+  max-width: 20%;
+}
+
+.crossfit-exercise-text {
+  margin-top: 1.5rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.crossfit-exercise-card h3 {
+  font-weight: 300;
+  color: black;
+}
+
+.crossfit-exercise-card a {
+  color: #fd7e14;
+}
+
+.crossfit-exercise-card a:hover {
+  color: #ad5a16;
+}
+
+.testimonies-container {
+  background-color: #f8f9fa;
+  padding: 8rem 6rem;
+}
+
+.testimonies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px, repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.testimonies-container h2 {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 6rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.08rem;
+}
+
+.testimony-card {
+  /* width: 500px; */
+  display: flex;
+  justify-content: center;
+}
+
+.testimony-card img {
+  border-radius: 50%;
+  max-width: 80%;
+}
+
+.testimony-card-text {
+  /* margin-left: -3rem; */
+  line-height: 1.7rem;
+  letter-spacing: 0.08rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.testimony-card-text h3 {
+  color: black;
+  font-weight: 100;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background-color: #1e1e1c;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.05rem;
+  margin-bottom: -2rem;
+}
+
+.footer {
+  padding: 4rem 0rem 0rem 2.8rem;
+  line-height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.about-card {
+  grid-column: 1/3;
+  /* grid-row: 1/2; */
+  /* padding-right: 7rem; */
+}
+
+.quick-menu-card {
+  grid-column: 3/4;
+  /* grid-row: 1/2; */
+}
+
+.program-card {
+  grid-column: 4/5;
+  /* grid-row: 1/2; */
+}
+
+.social-icon-card {
+  grid-column: 6/5;
+  /* grid-row: 1/2; */
+}
+
+.footer li {
+  list-style-type: none;
+  line-height: 2.2rem;
+}
+
+.footer h6 {
+  color: white;
+  margin-bottom: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 0.08rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer a:hover {
+  color: white;
+}
+
+.about-card a {
+  color: white;
+  background-color: #fd7e14;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.about-card a:hover {
+  background-color: #cf640d;
+}
+
+.about-card p {
+  margin-bottom: 1rem;
+}
+
+.copyright-card {
+  text-align: center;
+  padding: 7rem 0rem 5.5rem 0rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.heart {
+  color: red;
+}
+
+@media screen and (max-width: 999px) {
+  nav {
+    padding: 2rem 1rem;
+  }
+  .welcome-card {
+    min-height: 80vh;
+  }
+  .crossfit-exercise,
+  .popular-program-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .the-club-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .the-club-card-img {
+    grid-column: 1/2;
+  }
+
+  .the-club-card-text {
+    grid-column: 1/2;
+  }
+  .testimonies {
+    grid-template-columns: repeat(1, 1fr);
+    /* padding: 4rem 2rem; */
+  }
+}
+
+@media screen and (max-width: 755px) {
+  body {
+    margin: 1rem;
+  }
+  .nav-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured-trainer,
+  .crossfit-exercise,
+  .popular-program-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .welcome-card h1 {
+    font-size: 3rem;
+  }
+  nav {
+    padding: 2rem 1rem;
+  }
+  .footer,
+  .testimonies-container,
+  .crossfit-container,
+  .featured-trainer,
+  .the-club-card,
+  .popular-program-container {
+    padding: 4rem 1rem;
+  }
+  .the-club-card {
+    padding-top: 0rem;
+  }
+  .featured-trainer-container a {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.3rem;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-card {
+    grid-column: 1/2;
+  }
+  .quick-menu-card {
+    grid-column: 1/2;
+  }
+  .program-card {
+    grid-column: 1/2;
+  }
+  .social-icon-card {
+    grid-column: 1/2;
+  }
+  .copyright-card {
+    padding: 0rem 0rem 3rem 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome-card h1 {
+    font-size: 2rem;
+  }
+  .testimony-card {
+    flex-direction: column;
+  }
+  .testimony-card img {
+    max-width: 40%;
+    padding-bottom: 1rem;
+  }
+}
+/* @media screen and (min-width: 480px) and (max-width: 780px) {
+  .welcome-card h1 {
+    font-size: 16px;
+  }
+} */
+/* @media print {
+  .welcome-card h1 {
+    font-size: 1rem;
+  }
+  body {
+    background: #ad5a16;
+  }
+} */
